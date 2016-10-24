@@ -1,4 +1,4 @@
-
+//hazel
 /*
   1. Are the following variable valid? If it is not please explain it and correct them using the best practise.
  */
