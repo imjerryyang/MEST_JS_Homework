@@ -24,8 +24,8 @@ var totalNumber = 100;
 var greeting  =  'It's nice to me you today!';
 var response = "Ashwin said, "Yes Sir!""; //you cannot put double quote in a double quote
 
-var greeting  =  "It's nice to me you today!";
-var response = "Ashwin said, 'Yes Sir!'";
+var greeting  =  'It\'s nice to me you today!';
+var response = "Ashwin said, \"Yes Sir!\"";
 
 
 /*
@@ -66,11 +66,10 @@ pizza.brands = "KFC";
  */
 
 
-function Animal (type, habitat, category, walk) {
+function Animal (type, habitat, category) {
 	this.type = type;
 	this.habitat = habitat;
 	this.category = category;
-	this.walk = walk;
 }
 ​
 Animal.prototype.run =  function () {
@@ -78,27 +77,25 @@ Animal.prototype.run =  function () {
 }
 ​
 Animal.prototype.walk = function () {
-	if (this.walk)
-		console.log("I am walking!");
+	console.log("I am walking!");
 }
 ​
 ​function Duck (name) {
 	this.name = name;
 }
 ​
-Duck.prototype = new Animal ();
+Duck.prototype = new Animal ()
 ​
 
-​var duck = new Duck ("Yellow Duck");
+​var du = new Duck ("Yellow Duck");
 ​
 ​function Lizard (name) {
 	this.name = name;
 }
 
 Lizard.prototype = new Animal ();
-​
 
-​var lizard = new Lizard ("Yellow Lizard");
+​var liz = new Lizard ("Yellow Lizard");
 
 
 /*
@@ -121,14 +118,14 @@ Lizard.prototype = new Animal ();
         console.log("second Menu");
         break;
     default:
-        default console.log("Stop Messing With The Menu");
+        console.log("Stop Messing With The Menu");
 }
 
 /*
  * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
  */
  var studentScores = [50, 67, 80, 90, 100, 30, 88, 68];
- for (i = 1; i < studentScores.length; i++) {
+ for (var i = 1; i < studentScores.length; i++) {
  	if ( i > 2 ) {
  		console.log(studentScores[i]);
  	}
