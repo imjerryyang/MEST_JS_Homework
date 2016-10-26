@@ -13,7 +13,8 @@ var totalNumber = 100;    //camelCase is the  best practise.
   2. Are the following variable valid? If it is not please explain it and correct them by using the best practise
  */
 
-var greeting = "It's nice to me you today!"; //Since we're using an apostrophe in the string, we have to include our entire string in double quotation marks.
+var greeting = "It's nice to meet you today!"; //Since we're using an apostrophe in the string, we have to include our entire string in double quotation marks.
+											// alternatively, 'It\'s nice to meet you today!'
 var response = "Ashwin said, 'Yes Sir!'";  //We have to quote the statement in the string with a single quotation so the entire string is encapsulated in double quotation.
 
 /*
