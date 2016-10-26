@@ -183,7 +183,19 @@ var person1Greeting = hello.call(person1, 'Good Morning');
  *
  *     please write a function to change the first letter of every word to upper case.
  */
-function init_capital(str) {
+
+//Regular Expression method
+function capitalize(str) {
      console.log(str.replace(/\b\w/g, l => l.toUpperCase()));
 }
 
+//Full function
+function capitalize (str) {     
+     var wordsArray = str.split(' ');
+     var newWordsArray = [];
+     wordsArray.forEach (function (word) {
+            newWord = word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
+            newWordsArray.push(newWord); //return an array of the words in Title Case
+     });
+     return newWordsArray.join(' '); //
+}
