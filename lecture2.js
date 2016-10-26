@@ -1,11 +1,11 @@
 /*
  * 1. explain the special meaning of the following special characters
  
- \0 the null character
+ \0 the null character - it comments out all the text after it
  \n new line - writes all statements following it to the mext line
  \r carriage return - moves the cursor down and to the first column
  \v vertical tab - creates vertical space between two lines
- \t - creates a horizontal tab from the p
+ \t - creates a horizontal tab or paragraph
  \backspace - it matches a backspace character
  \f form feed - advance to the next page
  */
