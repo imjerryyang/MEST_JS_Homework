@@ -1,5 +1,5 @@
-/*
- * 1. explain the special meaning of the following special characters
+/* 1. explain the special meaning of the following special characters
+
  \0 the null character
 
  The null character is used to end or terminate a string.
@@ -32,6 +32,7 @@
  Form feed loads the next page on printers. It clears the screen in some terminal emulators.
 
  */
+
 
 /*  2.Please combine those two array together as one array by using concate: */
 
