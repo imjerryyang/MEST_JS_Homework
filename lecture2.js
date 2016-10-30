@@ -1,33 +1,33 @@
 /* 1. explain the special meaning of the following special characters
 
- \0 the null character
+ * \0 the null character
 
  The null character is used to end or terminate a string.
 
- \n new line
+ * \n new line
 
  The newline character creates line breaks within the output of  a string. It signifies the end of  a line.
 
- \r carriage return
+ * \r carriage return
 
  The carriage return goes to the beginning of a line. It signifies going back leftwards until we get to the left-most stop.
 
- \v vertical tab
+ * \v vertical tab
 
  Vertical tab positions the form at the next line tab stop.
 
 
- \t
+ * \t
 
  Used to find a tab character. It return s the position where the tab character was found.
 
 
- \backspace
+ * \backspace
 
  Backspace moves the cursor one position leftwards.
 
 
- \f form feed
+ * \f form feed
 
  Form feed loads the next page on printers. It clears the screen in some terminal emulators.
 
@@ -135,13 +135,16 @@
      function namer() {
            return this.name;
      }
-    
+
+    namer.bind(person1);
+    namer.bind(person2);
 
 /*
   12. you have following object:
    a. what is the result when we invoke count()?
    b. use bind on function expression to make this work.
  */
+
 
  var number = {
            x: 22,
@@ -152,7 +155,11 @@
            console.log(this.x + this.y);
      }
 
-// Upon calling count, we get: function() {console.log(this.x + this.y);}
+     count.bind(number)();
+
+// a. Upon calling count, we get: function() {console.log(this.x + this.y);}
+
+
 
 /*  13. you have following objects: use call methods on function expression to make this work. */
 
@@ -166,10 +173,25 @@
            lastName: 'Mike'
       };
  
-      function hello(greeting) {
+      var hello(greeting) {
            console.log(greeting + ' ' + this.firstName + '' + lastName);
      }
+
+
+     hello.bind(person1)('hello');
+
 
 /*  14. We have a following string: please write a function to change the first letter of every word to upper case.*/
 
  var str = 'Training, mentoring, and investing in world-class tech entrepreneurs in Africa.'
+
+ function firstCharOfWordToUpperCase(str) {
+    var splitStr = str.toLowerCase().split(' ');
+
+    for (var i = 0; i < splitStr.length; i++) {
+        splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
+
+    }
+
+    return splitStr.join(' ');
+}
