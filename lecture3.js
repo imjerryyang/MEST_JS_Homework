@@ -79,7 +79,7 @@ function validateEmail(email) {
 
 session storage store data for one session. Therefore, data can be lost when the browser tab is closed.
 differences:
-local storage                                          
+Local storage                                          
 1. is more secure
 2. can store large amount of data
 3. cannot affect the performance of the website
@@ -88,7 +88,7 @@ local storage
 6. information is never transfered to the server
 7. all the pages from the origin one can be stored
 
-session storage:
+Session storage:
 1. data can be lost once web browser is closed
 2. has expiry date
 3. it is almost equal to the local storage object
