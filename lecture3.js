@@ -18,19 +18,24 @@
  *  var obj = {
  *      func: func // what is the second func here?
  *  };
+
  
  	//The second func is the value assigned to the func attribute.
+
 
  *  obj.func(); //what is the output? try to explain why.
  *
  *  obj.func.bind(window)(); // what is the output? why?
 
+
  	//The output is Window
  	//Because the window argument in the bind function tells the bind function to bind the func to the window object.
- *
+
+ 
  *  obj.func.bind(this)();  // what is the output? why?
 
  	//The output is the Window object because the 'this' keyword calls the window object.
+ 	
  
  *  var people = {
  *      name: 'ashwin',
@@ -58,11 +63,7 @@ function capitalizeFirstLetter(str) {
 	return str.charAt(0).toUpperCase() + str.slice(1);
 }
 
-/*
- *  3. Write reg expresion for email validation(This is not an easy
- *  question, please make sure you do your research on this).
- *
- */
+/* 3. Write reg expresion for email validation.*/
 
 
 function validateEmail(email) {
@@ -70,27 +71,28 @@ function validateEmail(email) {
 	return ave.test(email);
 }
 
-/*
- * 4. what is localStorage and sessionStorge under window object? What is the
- *    difference
- */
+/*	4. what is localStorage and sessionStorge under window object? What is the difference. */
 
- /*local storage is a web application that can store data locally within the user's browser. The storage is per origin(per domain and protocol).one can easily access the same data.
+	//Local storage is a web application that can store data locally within the user's browser. 
+	//The storage is per origin, per domain and protocol. One can easily access the same data.
 
-session storage store data for one session. Therefore, data can be lost when the browser tab is closed.
-differences:
-Local storage                                          
-1. is more secure
-2. can store large amount of data
-3. cannot affect the performance of the website
-4. has no coockies
-5. storage limit is large at least 5mb
-6. information is never transfered to the server
-7. all the pages from the origin one can be stored
+	//Session storage stores data for one session, hence data can be lost when the browser tab is closed.
+	//The differences include:
+	// For Local storage;                                          
+		/*
+		1. It is more secure.
+		2. It can store large amounts of data.
+		3. It does not affect the performance of the website.
+		4. It has no cookies.
+		5. It has a large storage limit (at least 5MB).
+		6. Information is never transfered to the server.
+		7. All the pages from the origin one can be stored.
+		*/
 
-Session storage:
-1. data can be lost once web browser is closed
-2. has expiry date
-3. it is almost equal to the local storage object
+	// For Session storage:
+		/*
+		1. Data is lost once web browser is closed.
+		2. It has an expiry date.
+		3. It is almost equal to the local storage object.
+		*/
 
-*/
