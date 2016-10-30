@@ -9,9 +9,14 @@ Animal.prototype.sleep = function() {
     console.log(this.name + " can sleep");
 }
 
+Animal.prototype.run = function() {
+    console.log(this.name + " can run very fast");
+}
+
 var lion = new Animal("Lion");
 lion.eat();
 var cat = new Animal("Cat");
 cat.eat();
 cat.sleep();
+cat.run();
 </script>

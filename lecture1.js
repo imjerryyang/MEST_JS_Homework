@@ -55,8 +55,24 @@ var pizza = {
 
 function Animal(name) {
     this.name = name;
-};
+}
+Animal.prototype.eat = function() {
+    console.log(this.name + " can eat");
+}
+Animal.prototype.sleep = function() {
+    console.log(this.name + " can sleep");
+}
 
+Animal.prototype.run = function() {
+    console.log(this.name + " can run very fast");
+}
+
+var lion = new Animal("Lion");
+lion.eat();
+var cat = new Animal("Cat");
+cat.eat();
+cat.sleep();
+cat.run();
 /*
  *  5. Build a Animal object by using object constructor function, and add at least two method to prototype,
  *     create two animals from it.
