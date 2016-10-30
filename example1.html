@@ -1,0 +1,37 @@
+<html>
+<head></head>
+<body>
+<script>
+	var2 =7;
+	console.log(var2)
+
+	var var2;
+
+	//Anonymous Functions
+	var greet= function(){console.log("Hello MEST");}
+	greet();
+
+	//Call functions immediately
+
+	(function greeting(){
+		console.log("Hello MEST")
+	})()
+
+	var people={
+		morningGreeting:'good Morning',
+		greeting: function(){
+			console.log(this.morningGreeting);
+		}
+	};
+
+	people.greeting();
+
+	var speak = people.greeting;
+	console.log(speak)
+	speak()
+
+	var speakBind = speak.bind(people2);
+	speakBind();
+	</script>
+</body>
+</html>
