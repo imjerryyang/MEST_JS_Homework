@@ -37,7 +37,7 @@ var pizza = {
 	}
 	console.log(pizza.price);
 	
-	function Pizza(pack, flavour, make, price){
+	function pizza(pack, flavour, make, price){
 		this.pack = pack;
 		this.flavour = flavour;
 		this.make = make;
