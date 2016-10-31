@@ -47,32 +47,33 @@ Its a boolean operation that prints out true
 /*
  * 4. Build a pizza object by using all three object creation method, it must has at least 4 properties
  */
+var pizza = {}
+pizza.size = 'bmw'
+pizza.type = "pepperoni"
+pizza.weight = "flat"
+
+
 var pizza = {
     size: "large"
     type: "pepperonni"
     wieght: "flat"
 };
 
-function Animal(name) {
+function pizza(name) {
     this.name = name;
 }
-Animal.prototype.eat = function() {
-    console.log(this.name + " can eat");
+pizza.prototype.type = function() {
+    console.log(this.name + " is pepperonni");
 }
-Animal.prototype.sleep = function() {
-    console.log(this.name + " can sleep");
-}
-
-Animal.prototype.run = function() {
-    console.log(this.name + " can run very fast");
+pizza.prototype.weight = function() {
+    console.log(this.name + " thin crust")
 }
 
-var lion = new Animal("Lion");
-lion.eat();
-var cat = new Animal("Cat");
-cat.eat();
-cat.sleep();
-cat.run();
+var Debonnairs = new pizza("de'bonnairs's pizza");
+Debonnairs.type();
+
+var weightType = new pizza("weight is")
+weightType.weight();
 /*
  *  5. Build a Animal object by using object constructor function, and add at least two method to prototype,
  *     create two animals from it.
@@ -95,13 +96,24 @@ cat.sleep();
 /*
  * 6. Write a small menu selection function by using if-else and switch, input number, output name of your order
  */
-var menu = input("") {
-        console.log("")
-    }
-    /*
-     * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
-     */
+function menu() {
+    if document.createElement(); >= 1
+    console.log("Banku")
+    else
+        return "not available"
+}
+/*
+ * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
+ */
+var studentScores = [50, 67, 80, 90, 100, 30, 88, 68];
+for (var i in studentScores; i < 100; i += ) {
+    console.log(i);
+}
 
 /*
  * 8. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array , array.forEach and conditions.
  */
+forEach()
+array.forEach(function(studentScores) {
+    console.log(studentScores);
+});
