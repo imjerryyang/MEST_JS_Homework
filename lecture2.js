@@ -138,6 +138,17 @@ var numberOfGuys = (function counter(num) {
  *  b. use bind on function expression to make this work.
  */
  
+var number = {
+ x: 22,
+ y: 33
+};
+
+ var count = function() {
+ 	console.log(this.x + this.y);
+ }
+
+ count();
+ count.bind(number)(); //bind allows us to easily set which specific object will be bound to 'this' when a function or method is invoked.
 
 /*
  * 13. you have following objects:
@@ -158,9 +169,38 @@ var numberOfGuys = (function counter(num) {
  *  use call methods on function expression to make this work.
  */
 
+ var person1 = {
+    firstName: 'ashwin',
+    lastName: 'Yaw'
+};
+
+var person2 = {
+    firstName: 'lars',
+    lastName: 'Mike'
+};
+function hello(greeting) {
+    console.log(greeting + ' ' + this.firstName + ' ' + this.lastName);
+}
+
+hello.call(person1, "Good evening");
+hello.call(person2, "Good afternoon");
+
 /*
  * 14. We have a following string:
  *     var str = 'Training, mentoring, and investing in world-class tech entrepreneurs in Africa.'
  *
  *     please write a function to change the first letter of every word to upper case.
  */
+
+var str = 'Training, mentoring, and investing in world-class tech entrepreneurs in Africa.'
+var str2 = '';
+
+for (var i = 0; i < str.length; i++) {
+	var prev = str[i - 1];
+	if (prev === ' ') {
+	    str2 += str[i].toUpperCase();
+	} else {
+        str2 += str[i];
+    }
+}
+console.log(str2);
