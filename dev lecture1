@@ -61,8 +61,8 @@ The type of 0.3 + 0.1  and 0.4 is number. Hence, they equate each other.
  * 4. Build a pizza object by using all three object creation method, it must has at least 4 properties
  */
 	//1.
-	var pizzaFirst = {
-		"type" : "kenyan",
+	var pizzaOne = {
+		"type" : "nigerian",
 		"size" : "small",
 		"flavour" : "strawberry",
 		"anything" : "something"
@@ -76,13 +76,13 @@ The type of 0.3 + 0.1  and 0.4 is number. Hence, they equate each other.
 		this.flavour = flavour;
 		this.anything = anything;
 	}
-	var pizzaSecond = new Pizza("kenyan", "large", "vanilla", "anythingHere");
+	var pizzaTwo = new Pizza("italian", "large", "vanilla", "anythingHere");
 	console.log(pizzaTwo.size);
 	
 	//3.
 	var pizza = {
 		"type" : "kenyan",
-		"size" : "medium",
+		"size" : "extra-lage",
 		"flavour" : "blueberry",
 		"anything" : "any"
 	}
