@@ -37,7 +37,7 @@ var response = 'Ashwin said, \"Yes Sir!\"';
 /*
  * 3. Try 0.3 + 0.1 === 0.4, explain what happen here
  */
-  // The expression evaluates to true because 0.3 + 0.1 evaluates to 0.4 which is equal to 0.4
+// The expression evaluates to true because 0.3 + 0.1 evaluates to 0.4 which is equal to 0.4
  console.log(0.3 + 0.1 === 0.4);
 
 
@@ -71,15 +71,15 @@ var response = 'Ashwin said, \"Yes Sir!\"';
  	this.age = 0;
  	this.position_x = 0;
  	this.position_y = 0;
-
- 	Animal.prototype.grow = function() {
- 		this.age += 1;
- 	}
- 	Animal.prototype.walk = function() {
- 		this.position_x += 1;
- 	}
  }
 
+ Animal.prototype.grow = function() {
+ 	this.age += 1;
+ }
+
+ Animal.prototype.walk = function() {
+ 	this.position_x += 1;
+ }
 
 
  dog = new Animal("dog")
